@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Importance of Lighting</title>
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
+  <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
+  <link rel="stylesheet" href="{% static 'styles/portfolio.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/blog.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div>
+        <a href="{% url 'index' %}"><img class="logo" src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}" alt="Fanisi Atelier logo"
+            ; /></a>
+      </div>
+      <ul class="links">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+      </ul>
+      <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars" style="font-size: 2.2rem; color:#b9657b"></i>
+      </div>
+      <div class="dropdown-menu">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+      </div>
+    </nav>
+  </header>
+  <section class="blog-wrapper">
+    <div class="top-content">
+      <h1 class="sr-reveal">The Importance of Lighting in Interior Design</h1>
+      <p id="calender">
+      <div class="trends-content-top">
+        <div>
+          <i class="fa-solid fa-calendar fa-sm" style="color: #657186; margin-right: 10px"></i>{{ date }}
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
+  </section>
+  <div>
+    <img src="{% static 'media/images/tenweb_media_TzeWgrNl.webp' %}" alt="Dining Room" style="width: 100%;height:max-content">
+  </div>
+  <div class="blog-wrapper">
+    <div class="trends-main-content">
+      <p class="sr-reveal">
+        Lighting is often an overlooked aspect of interior design, yet it plays a crucial role in shaping the
+        atmosphere
+        of a space. The right lighting can highlight architectural features, create focal points, and enhance the
+        overall
+        aesthetic of a room. It’s essential to consider both natural and artificial lighting when designing your
+        interiors. Natural light can make a space feel more open and inviting, while strategically placed artificial
+        lighting can add warmth and depth.
+      </p>
+      <p class="sr-reveal">
+        When planning your lighting design, think about layering different types of lighting: ambient, task, and
+        accent.
+        Ambient lighting provides overall illumination, task lighting focuses on specific areas for activities like
+        reading or cooking, and accent lighting highlights artwork or architectural details. By combining these three
+        types, you can create a well-balanced and functional lighting scheme that enhances the beauty of your home.
+      </p>
+      <p class="sr-reveal">
+        Additionally, consider the use of dimmers and smart lighting solutions to adjust the mood of your space
+        according
+        to different occasions. This flexibility allows you to create a cozy atmosphere for intimate gatherings or
+        bright,
+        energizing light for workspaces. Ultimately, investing in thoughtful lighting design can elevate your
+        interiors,
+        making them not only more beautiful but also more functional.
+      </p>
+    </div>
+    <h2>Related Posts</h2>
+    <div id="related-wrapper" class="sr-reveal">
+      <article>
+        <div class="image-box after-content">
+          <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"><img src="{% static 'media/images/tenweb_media_FrZEz79Q.webp' %}"
+              alt="color Palette" /></a>
+        </div>
+        <div class="blog-content-box after-content sr-reveal">
+          <h5>Design Tips</h5>
+          <h2>
+            <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}">How to Choose the Right Color Palette for
+              Your Home</a>
+          </h2>
+          <p>
+            Selecting the perfect color palette can transform your home into a
+            harmonious space.
+          </p>
+          <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}">Read More <i
+              class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </article>
+      <article>
+        <div class="image-box after-content">
+          <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"><img src="{% static 'media/images/tenweb_media_za3hbntK.webp' %}"
+              alt="Living Room" /></a>
+        </div>
+        <div class="blog-content-box after-content sr-reveal">
+          <h5>Space Optimization</h5>
+          <h2>
+            <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}">Maximizing Small Spaces: Design Tips and
+              Tricks</a>
+          </h2>
+          <p>
+            Learn how to make the most of your small living areas with these
+            design strategies.
+          </p>
+          <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}">Read More <i
+              class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </article>
+      <article>
+        <div class="image-box after-content">
+          <a href="{% url 'top-5-interior-design-trends-2024' %}"
+            ><img src="{% static 'media/images/tenweb_media_YyZPIzJu.webp' %}" alt="Living Room"
+          /></a>
+        </div>
+        <div class="blog-content-box after-content sr-reveal">
+          <h5>Trends</h5>
+          <h2>
+            <a href="{% url 'top-5-interior-design-trends-2024' %}"
+              >Top 5 Interior Design Trends for 2024</a
+            >
+          </h2>
+          <p>
+            Discover the latest trends that are shaping the world of
+            interior design this year.
+          </p>
+          <a href="{% url 'top-5-interior-design-trends-2024' %}">Read More<i class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'index' %}"><img class="f-logo" src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+                alt="Fanisi Atelier logo" /></a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </ul>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </nav>
+    </div>
+    <hr />
+    <div class="footer">
+      <p>
+        &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
+        interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
+      </p>
+      <p><a href="#">Terms of Service</a></p>
+      <p><a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

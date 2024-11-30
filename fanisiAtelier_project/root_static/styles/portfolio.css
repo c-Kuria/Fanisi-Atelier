@@ -1,0 +1,160 @@
+.portfolio-wrapper img {
+  width: 413.33px;
+}
+
+.portfolio-content {
+  margin: 4rem;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h5 {
+  color: rgb(97 108 124);
+}
+
+.portfolio-header p {
+  width: 680px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.project-showcase {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-showcase p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.portfolio-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.portfolio-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 630px;
+  height: 810px;
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+}
+
+.div div {
+  width: 630px;
+}
+
+@media (max-width: 1336px) {
+  .portfolio-content {
+    margin: 2rem;
+  }
+
+  .portfolio-wrapper img {
+    width: 375.13px;
+  }
+}
+
+@media (max-width: 1186px) {
+  .portfolio-wrapper img {
+    width: 301.13px;
+  }
+
+  .photo {
+    width: 545px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 968px) {
+  .portfolio-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio-wrapper img {
+    width: 356.13px;
+  }
+
+  h1 {
+    margin: 1rem;
+  }
+
+  .photo {
+    width: 410px;
+    height: 490px;
+  }
+
+  h1 {
+   font-size: 36px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-wrapper img {
+    width: 165.13px;
+  }
+
+  .container-box {
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: center;
+  }
+
+  .photo {
+    width: 330px;
+    height: 405px;
+  }
+
+  .div div {
+    width: 100%;
+  }
+
+  .portfolio-header p {
+    width: 100%;
+  }
+
+  .portfolio-wrapper{
+    gap: 0.5rem;
+  }
+}

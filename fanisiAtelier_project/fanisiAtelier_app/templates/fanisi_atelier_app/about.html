@@ -1,0 +1,188 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="{% url 'index' %}"
+            ><img
+              class="logo"
+              src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+              alt="Fanisi Atelier logo"
+              ;
+          /></a>
+        </div>
+        <ul class="links">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </ul>
+        <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
+        <div class="toggle-btn">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 2.2rem; color: #b9657b"
+          ></i>
+        </div>
+        <div class="dropdown-menu">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </div>
+      </nav>
+    </header>
+    <section class="about-wrapper sr-reveal">
+      <div class="abt-header">
+        <div>
+          <h1>Discover Fanisi Atelier</h1>
+          <p>
+            At Fanisi Atelier, we transform spaces into beautiful, functional
+            environments that reflect our clients’ unique styles and needs.
+          </p>
+        </div>
+      </div>
+      <div class="abt-body-wrapper">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              fill="#8490a4"
+              d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448L64 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"
+            />
+          </svg>
+          <!-- <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-paintbrush" style="color: #858e9d"></i> -->
+          <h2>Creative Designs</h2>
+          <p>
+            Our innovative approach to interior and exterior design ensures that
+            every project is tailored to our clients' visions, creating spaces
+            that inspire and uplift.
+          </p>
+          <p>Explore our portfolio to see our work</p>
+        </div>
+        <div class="abt-wrapper-top">
+          <i class="fa-solid fa-users" style="color: #8891a0"></i>
+          <h2>Collaborative Approach</h2>
+          <p>
+            We believe in working closely with our clients throughout the design
+            process, ensuring that their ideas and preferences are at the
+            forefront of our work.
+          </p>
+          <p>Your vision is our mission.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-leaf" style="color: #6c7584"></i>
+          <h2>Sustainable Practices</h2>
+          <p>
+            Fanisi Atelier is committed to using eco-friendly materials and
+            sustainable practices in our designs, ensuring our work is not only
+            beautiful but also responsible.
+          </p>
+          <p>Join us in creating a greener future.</p>
+        </div>
+      </div>
+    </section>
+    <section class="team-wrapper sr-reveal">
+      <h1>Meet Our Designers</h1>
+      <p>Discover the talented individuals behind our stunning designs.</p>
+      <div class="team">
+        <div>
+          <img src="{% static 'media/images/team.webp' %}" alt="Richard Mbogua" />
+          <h3>Richard Mbugua</h3>
+          <h4>Lead Designer</h4>
+          <p>
+            Richard has over 10 years of experience in interior design,
+            specializing in residential projects. His keen eye for detail and
+            passion for aesthetics make him a valuable asset to the team.
+          </p>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div>
+          <img src="{% static 'media/images/team.webp' %}" alt="Joe" />
+          <h3>Joe Muhanda</h3>
+          <h4>Project Manager</h4>
+          <p>
+            Joe ensures that every project runs smoothly and on schedule,
+            coordinating between clients and the design team.
+          </p>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div>
+          <img src="{% static 'media/images/team.webp' %}" alt="Bernard Kainamia" />
+          <h3>Bernard Kainamia</h3>
+          <h4>Client Relations Manager</h4>
+          <p>
+            Bernard is dedicated to ensuring client satisfaction and maintaining
+            strong relationships throughout the design process.
+          </p>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="{% url 'index' %}"
+                ><img
+                  class="f-logo"
+                  src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+                  alt="Fanisi Atelier logo"
+              /></a>
+            </li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+          </ul>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>
+          &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
+          interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
+        </p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

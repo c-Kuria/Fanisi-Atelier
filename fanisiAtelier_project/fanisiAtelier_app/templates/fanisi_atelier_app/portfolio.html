@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/portfolio.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="{% url 'index' %}"
+            ><img
+              class="logo"
+              src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+              alt="Fanisi Atelier logo"
+              ;
+          /></a>
+        </div>
+        <ul class="links">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </ul>
+        <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
+        <div class="toggle-btn">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 2.2rem; color: #b9657b"
+          ></i>
+        </div>
+        <div class="dropdown-menu">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </div>
+      </nav>
+    </header>
+    <section class="portfolio-content">
+      <div class="portfolio-header">
+        <h1>Portfolio</h1>
+        <p class="sr-reveal">
+          Explore our curated gallery of stunning interior and exterior designs,
+          showcasing the creativity and expertise of Fanisi Atelier.
+        </p>
+      </div>
+      <div class="project-showcase">
+        <h1>Projects</h1>
+        <p class="sr-reveal">
+          Explore our stunning designs that transform spaces into beautiful
+          environments.
+        </p>
+        <section class="portfolio-wrapper">
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_Z1TM5nhs.webp' %}" alt="Leaving Area" />
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_Y0ev4k7Z.webp' %}" alt="Outdoor Design" />
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_db8AKZbh.webp' %}" alt="Kitchen Design" />
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_2bNiQrQz.webp' %}" alt="Bedroom Design" />
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_MRwckEVL.webp' %}" alt="Office Spaces" />
+          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_70TlrzND.webp' %}" alt="Dining Spaces" />
+        </section>
+      </div>
+      <div class="portfolio-datails">
+        <h1>Project Details</h1>
+        <div class="container-box div">
+          <div>
+            <img
+              class="photo"
+              src="{% static 'media/images/tenweb_media_EaNYVz4e.webp' %}"
+              alt="Modern Living Room Design"
+            />
+            <h2>Modern Living Room</h2>
+            <p class="sr-reveal">
+              This project showcases a modern living room design with a focus on
+              clean lines, neutral colors, and functional furniture. The space
+              is designed to be both stylish and comfortable, providing a
+              perfect environment for relaxation and socializing.
+            </p>
+          </div>
+          <div>
+            <p class="sr-reveal">
+              <b>Project Description:</b>This modern living room design features
+              a blend of contemporary and minimalist styles. The use of neutral
+              colors and sleek furniture creates a sophisticated and inviting
+              atmosphere. Key elements include a comfortable sofa, a stylish
+              coffee table, and elegant lighting fixtures.
+            </p>
+          </div>
+        </div>
+        <div class="container-box div">
+          <div>
+            <img
+              class="photo"
+              src="{% static 'media/images/tenweb_media_Pec2FrrH.webp' %}"
+              alt="Elegant Kitchen"
+            />
+            <h2>Elegant Kitchen</h2>
+            <p class="sr-reveal">
+              This project highlights an elegant kitchen design with a focus on
+              functionality and aesthetics. The kitchen features a large island,
+              modern appliances, and custom cabinetry, providing ample space for
+              cooking and entertaining.
+            </p>
+          </div>
+          <div>
+            <p class="sr-reveal">
+              <b>Project Description:</b>The elegant kitchen design combines
+              functionality with style. The large island serves as a focal
+              point, offering additional workspace and seating. Modern
+              appliances and custom cabinetry enhance the kitchen’s efficiency
+              and visual appeal.
+            </p>
+          </div>
+        </div>
+        <div class="container-box div">
+          <div>
+            <img
+              class="photo"
+              src="{% static 'media/images/tenweb_media_H0vlr6KO.webp' %}"
+              alt="Cozy Bedroom"
+            />
+            <h2>Cozy Bedroom</h2>
+            <p class="sr-reveal">
+              This project features a cozy bedroom design that prioritizes
+              comfort and tranquility. The room is decorated with soft lighting,
+              a comfortable bed, and tasteful decor, creating a serene and
+              inviting space.
+            </p>
+          </div>
+          <div>
+            <p class="sr-reveal">
+              <b >Project Description:</b>The cozy bedroom design focuses on
+              creating a peaceful and relaxing environment. Soft lighting, a
+              comfortable bed, and tasteful decor elements contribute to the
+              room’s serene atmosphere, making it an ideal retreat for rest and
+              relaxation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="{% url 'index' %}"
+                ><img
+                  class="f-logo"
+                  src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+                  alt="Fanisi Atelier logo"
+              /></a>
+            </li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+          </ul>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>
+          &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
+          interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
+        </p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
