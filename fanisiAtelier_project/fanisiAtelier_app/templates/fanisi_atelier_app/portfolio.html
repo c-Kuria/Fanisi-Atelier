@@ -37,8 +37,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </ul>
         <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
         <div class="toggle-btn">
@@ -52,8 +52,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </div>
       </nav>
     </header>
@@ -66,18 +66,32 @@
         </p>
       </div>
       <div class="project-showcase">
-        <h1>Projects</h1>
-        <p class="sr-reveal">
-          Explore our stunning designs that transform spaces into beautiful
-          environments.
-        </p>
         <section class="portfolio-wrapper">
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_Z1TM5nhs.webp' %}" alt="Leaving Area" />
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_Y0ev4k7Z.webp' %}" alt="Outdoor Design" />
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_db8AKZbh.webp' %}" alt="Kitchen Design" />
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_2bNiQrQz.webp' %}" alt="Bedroom Design" />
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_MRwckEVL.webp' %}" alt="Office Spaces" />
-          <img class="sr-reveal" src="{% static 'media/images/tenweb_media_70TlrzND.webp' %}" alt="Dining Spaces" />
+          <img
+            class="sr-reveal"
+            src="{% static 'media/images/29b23efb1aac0aa3a3ba44d338231893.jpg' %}"
+            alt="Dining Spaces"
+          />
+          <img
+            class="kitchen sr-reveal"
+            src="{% static 'media/images/IMG_3194.jpg' %}"
+            alt="Kitchen Design"
+          />
+          <img
+            class="over sr-reveal"
+            src="{% static 'media/images/IMG-20240207-WA0005.jpg' %}"
+            alt="Outdoor Design"
+          />
+          <img
+            class="under1 sr-reveal"
+            src="{% static 'media/images/B1.jpg' %}"
+            alt="Leaving Area"
+          />
+          <img
+            class="under2 sr-reveal"
+            src="{% static 'media/images/WhatsApp Image 2024-11-29 at 10.57.06 PM.jpeg' %}"
+            alt="Bedroom Design"
+          />
         </section>
       </div>
       <div class="portfolio-datails">
@@ -149,7 +163,7 @@
           </div>
           <div>
             <p class="sr-reveal">
-              <b >Project Description:</b>The cozy bedroom design focuses on
+              <b>Project Description:</b>The cozy bedroom design focuses on
               creating a peaceful and relaxing environment. Soft lighting, a
               comfortable bed, and tasteful decor elements contribute to the
               room’s serene atmosphere, making it an ideal retreat for rest and
@@ -174,6 +188,7 @@
             <li><a href="{% url 'about' %}">About Us</a></li>
             <li><a href="{% url 'services' %}">Services</a></li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'index' %}#contact">Contact</a></li>
             <li><a href="{% url 'blog' %}">Blog</a></li>
           </ul>
           <div class="social-icons">

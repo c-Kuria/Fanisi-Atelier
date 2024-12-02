@@ -1,110 +1,132 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
-  <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
-  <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
-  <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div>
-        <a href="{% url 'index' %}"><img class="logo"
-            src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}" alt="Fanisi Atelier logo"
-            ; /></a>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="{% url 'index' %}"
+            ><img
+              class="logo"
+              src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+              alt="Fanisi Atelier logo"
+              ;
+          /></a>
+        </div>
+        <ul class="links">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+        </ul>
+        <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
+        <div class="toggle-btn">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 2.2rem; color: #b9657b"
+          ></i>
+        </div>
+        <div class="dropdown-menu">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="">Hi</a></li>
+        </div>
+      </nav>
+    </header>
+    <section class="motion-background">
+      <h1 class="sr-reveal">Beautiful Interior Spaces</h1>
+      <p class="sr-reveal">
+        Experience the artistry of interior and exterior design with Fanisi
+        Atelier. We transform your vision into reality.
+      </p>
+      <div class="btn-container">
+        <a class="ptf-btn" href="{% url 'portfolio' %}">View Portfolio</a>
+        <a class="svs-btn" href="{% url 'services' %}">Our Services</a>
       </div>
-      <ul class="links">
-        <li><a href="{% url 'index' %}">Home</a></li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
-        <li><a href="{% url 'services' %}">Services</a></li>
-        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-        <li><a href="{% url 'blog' %}">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars" style="font-size: 2.2rem; color: #b9657b"></i>
-      </div>
-      <div class="dropdown-menu">
-        <li><a href="{% url 'index' %}">Home</a></li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
-        <li><a href="{% url 'services' %}">Services</a></li>
-        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-        <li><a href="{% url 'blog' %}">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </div>
-    </nav>
-  </header>
-  <section class="motion-background">
-    <h1 class="sr-reveal">Beautiful Interior Spaces</h1>
-    <p class="sr-reveal">
-      Discover the art of interior and exterior design with Fanisi Atelier.
-      Our expert team brings your vision to life, creating stunning and
-      functional spaces.
-    </p>
-    <div class="btn-container">
-      <a class="ptf-btn" href="{% url 'portfolio' %}">View Portfolio</a>
-      <a class="svs-btn" href="{% url 'services' %}">Our Services</a>
-    </div>
-  </section>
-  <section class="discover-fanisi">
-    <div class="discover-wrapper sr-reveal">
-      <div class="dsv-color-palette">
-        <!-- <video src="{% static '/media/videos/Tigoni View 6~2.mp4' %}" autoplay muted ></video> -->
-        <!-- <video src="{% static '/media/videos/Tigoni View 6.webm' %}" autoplay muted loop></video> -->
-        <video src="{% static '/media/videos/Tigoni View.webm' %}" autoplay muted loop></video>
-      </div>
-      <div class="content-section">
-        <section>
-          <div>
-            <h1>Discover Fanisi Atelier</h1>
-          </div>
-          <div>
-            <h1 style="color: #685d60a6;font-size:1.3em;">Where Vision Meets Expertise</h1>
-          </div>
-          <p style="max-width:94%;">
-            At Fanisi Atelier, we transform spaces into extraordinary environments that inspire and delight. Our passion
-            for design excellence and attention to detail ensures each project is a masterpiece of functionality and
-            aesthetics.
-          </p>
-        </section>
-        <div class="dsv-info-no_motion">
+    </section>
+    <section class="discover-fanisi">
+      <div class="discover-wrapper sr-reveal">
+        <div class="dsv-color-palette">
+          <!-- <video src="{% static '/media/videos/Tigoni View 6~2.mp4' %}" autoplay muted ></video> -->
+          <!-- <video src="{% static '/media/videos/Tigoni View 6.webm' %}" autoplay muted loop></video> -->
+          <video autoplay muted loop plays-inline>
+            <source src="{% static '/media/videos/Tigoni View.webm' %}" />
+          </video>
+        </div>
+        <div class="content-section">
           <section>
-            <h2 style="color: #e33665; font-size:3em;font-weight:600;">
-              <span class="num" data-val="200">000</span>+
-            </h2>
-            <p>Projects Completed</p>
-            <p>Delivering excellence across residential and commercial spaces</p>
+            <div class="sn-final">
+              <h1>Discover Fanisi Atelier</h1>
+            </div>
+            <div class="sn-final">
+              <h1 style="color: #685d60a6; font-size: 1.3em">
+                Where Vision Meets Expertise
+              </h1>
+            </div>
+            <p style="max-width: 94%">
+              At Fanisi Atelier, we transform spaces into extraordinary
+              environments that inspire and delight. Our passion for design
+              excellence and attention to detail ensures each project is a
+              masterpiece of functionality and aesthetics.
+            </p>
           </section>
-          <section>
-            <h2 style="color: #e33665; font-size:3em;font-weight:600;"><span class="num" data-val="15">000</span>+</h2>
-            <p>Expert Designers</p>
-            <p>Creative minds crafting unique interior experiences</p>
-          </section>
+          <div class="dsv-info-no_motion">
+            <section>
+              <h2 style="color: #e33665; font-size: 3em; font-weight: 600">
+                <span class="num" data-val="200">000</span>+
+              </h2>
+              <p>Projects Completed</p>
+              <p>
+                Delivering excellence across residential and commercial spaces
+              </p>
+            </section>
+            <section>
+              <h2 style="color: #e33665; font-size: 3em; font-weight: 600">
+                <span class="num" data-val="15">000</span>+
+              </h2>
+              <p>Expert Designers</p>
+              <p>Creative minds crafting unique interior experiences</p>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="main-service-wrapper">
-    <div class="flex-end">
-      <h1>Our Design Services</h1>
-    </div>
-    <!-- <div class="description">
+    </section>
+    <section class="main-service-wrapper">
+      <div class="flex-end">
+        <h1>Our Design Services</h1>
+      </div>
+      <!-- <div class="description">
           <p>
             Fanisi Atelier offers a comprehensive range of interior and
             exterior design services tailored to meet your unique needs. Our
@@ -113,337 +135,422 @@
           </p>
         </div>
       </div> -->
-    <div class="d-dsv-grid">
-      <div class="sr-reveal">
-        <h2>Interior Design</h2>
-        <img src="{% static '/media/images/a127beb9061e0dc1d08162c089f3b007.jpg' %}" alt="Interior Design" />
-        <p>
-          Transform your living spaces with our bespoke interior design
-          services, tailored to your unique style and preferences.
-        </p>
-        <a class="svc-btn" href="#">Learn More</a>
-      </div>
-      <div class="sr-reveal">
-        <h2>Exterior Design</h2>
-        <img src="{% static '/media/images/114e9cb7cad57e37b4777022863a39b5.jpg' %}" alt="Exterior Design" />
-        <p>
-          Enhance your outdoor areas with our expert exterior design
-          services, creating inviting and functional spaces.
-        </p>
-        <a class="svc-btn" href="#">Learn More</a>
-      </div>
-      <div class="sr-reveal">
-        <h2>Commercial Design</h2>
-        <img src="{% static '/media/images/71f9dbc0e3277f0e929f39343f7f6482.jpg' %}" alt="Commercial Design" />
-        <p>
-          Optimize your commercial spaces with our professional design
-          services, ensuring a productive and aesthetically pleasing
-          environment.
-        </p>
-        <a class="svc-btn" href="#">Learn More</a>
-      </div>
-    </div>
-  </section>
-  <div class="dark-div">
-    <div>
-      <h1 style="margin-top: 0px">Our Stunning Projects</h1>
-      <p class="sr-reveal">
-        Explore our diverse portfolio of completed interior designs that
-        reflect our creativity and attention to detail.
-      </p>
-    </div>
-    <section class="projects-showcase">
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/IMG_6950.jpg' %}" alt="" />
-      </div>
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/IMG-20240205-WA0006.jpg' %}" alt="" />
-      </div>
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/B1.jpg' %}" alt="" />
-      </div>
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/WhatsApp Image 2024-11-29 at 10.57.08 PM.jpeg' %}" alt="" />
-      </div>
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/C5.jpg' %}" alt="" />
-      </div>
-      <div>
-      <img class="sr-reveal" src="{% static '/media/images/IMG_5854.jpg' %}" alt="" />
-      </div>
-    </section>
-    <section class="client-love">
-      <h1>Client Love</h1>
-      <p>
-        Hear from our satisfied clients who have transormed their spaces with
-        Fanisi Atelier's expertise.
-      </p>
-      <div class="testimonials">
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #ce436883"></i>
-            <p>
-              Fanisi Atelier transformed my living room into a stunning space.
-              Their attention to detail is unmatched!
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}" alt="" />
-            </div>
-            <div class="user-name">
-              <strong>Alice Johnson</strong><br />
-              <span>Home Owner</span>
-            </div>
-          </div>
+      <div class="d-dsv-grid">
+        <div class="sr-reveal">
+          <h2>Interior Design</h2>
+          <img
+            src="{% static '/media/images/a127beb9061e0dc1d08162c089f3b007.jpg' %}"
+            alt="Interior Design"
+          />
+          <p>
+            Transform your living spaces with our bespoke interior design
+            services, tailored to your unique style and preferences.
+          </p>
+          <a class="svc-btn" href="#">Learn More</a>
         </div>
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #bb506c"></i>
-            <i class="fa-solid fa-star" style="color: #a35368"></i>
-            <p>
-              The design they created for my restaurant has received countless
-              compliments. Truly a game changer!
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}  " alt="" />
-            </div>
-            <div class="user-name">
-              <strong>Michael Smith</strong><br />
-              <span>Restaurant Owner</span>
-            </div>
-          </div>
+        <div class="sr-reveal">
+          <h2>Exterior Design</h2>
+          <img
+            src="{% static '/media/images/114e9cb7cad57e37b4777022863a39b5.jpg' %}"
+            alt="Exterior Design"
+          />
+          <p>
+            Enhance your outdoor areas with our expert exterior design services,
+            creating inviting and functional spaces.
+          </p>
+          <a class="svc-btn" href="#">Learn More</a>
         </div>
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #0000001c"></i>
-            <p>
-              Working with Fanisi Atelier was a dream. They understood my
-              vision and brought it to life beautifully.
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}" alt="" />
-            </div>
-            <div class="user-name">
-              <strong>Sara Lee</strong><br />
-              <span>Real Estate Agent</span>
-            </div>
-          </div>
-        </div>
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #685d60"></i>
-            <p>
-              Our office space feels so much more inviting and productive
-              thanks to their innovative designs.
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}" alt="" />
-            </div>
-            <div class="user-name">
-              <strong>David Brown</strong><br />
-              <span> Office Manager</span>
-            </div>
-          </div>
-        </div>
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #7c6067"></i>
-            <i class="fa-solid fa-star" style="color: #837176"></i>
-            <p>
-              I was blown away by the creativity and style they brought to my
-              home. Highly recommend!
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}" alt="" />
-            </div>
-            <div class="user-name">
-              <strong>Emily Davis</strong><br />
-              <span>Home Decor Influencer</span>
-            </div>
-          </div>
-        </div>
-        <div class="box-top sr-reveal">
-          <div>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #e33665"></i>
-            <i class="fa-solid fa-star" style="color: #92606d"></i>
-            <p>
-              Fanisi Atelier's designs not only look great but also add
-              significant value to my properties.
-            </p>
-          </div>
-          <div class="client-profile">
-            <div class="profile">
-              <img src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}" alt="" />
-            </div>
-            <div class="user-name">
-              <strong>James Wilson</strong><br />
-              <span>Property Developer</span>
-            </div>
-          </div>
+        <div class="sr-reveal">
+          <h2>Commercial Design</h2>
+          <img
+            src="{% static '/media/images/71f9dbc0e3277f0e929f39343f7f6482.jpg' %}"
+            alt="Commercial Design"
+          />
+          <p>
+            Optimize your commercial spaces with our professional design
+            services, ensuring a productive and aesthetically pleasing
+            environment.
+          </p>
+          <a class="svc-btn" href="#">Learn More</a>
         </div>
       </div>
     </section>
-  </div>
-  <section id="contact" class="c-response">
-    <div>
-      <div id="custom-alert">
-        <p id="custom-alert-message"></p>
+    <div class="dark-div">
+      <div>
+        <h1 style="margin-top: 0px">Our Stunning Projects</h1>
+        <p class="sr-reveal">
+          Explore our diverse portfolio of completed interior designs that
+          reflect our creativity and attention to detail.
+        </p>
       </div>
-      <form id="contactForm" action="{% url 'send_email' %}" method="post">
-        {% csrf_token %}
-        <div class="form-tittle">
-          <h3>Get in Touch</h3>
-          <p>We'd love to hear from you!</p>
+      <section class="projects-showcase">
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/IMG_6950.jpg' %}"
+            alt=""
+          />
         </div>
-        <label for="text" id="name">Name</label><br />
-        <input size="1" type="text" name="name" id="response-name" placeholder="Enter your name" required="required"
-          aria-required="true" /><br />
-        <label for="email" id="email">Email</label><br />
-        <input type="email" name="email" id="response-email" placeholder="Enter your email" required="required"
-          aria-required="true" /><br />
-        <label for="text" id="response">Message</label><br />
-        <textarea name="message" id="message" placeholder="Type your message" rows="4" required="required"
-          aria-required="true"></textarea><br />
-        <input type="checkbox" id="terms" required="required" aria-required="true" />
-        <label for="terms" id="terms">I accept the Terms</label><br />
-        <input type="submit" id="form-submit">
-      </form>
-    </div>
-    <div class="g-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.926347122296!2d36.74464877552199!3d-1.2115603987768764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f23e201e9164d%3A0xeb5aee215a2d18ec!2sFANISI%20HEIGHTS%20KARURA!5e0!3m2!1sen!2ske!4v1728895433026!5m2!1sen!2ske"
-        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
-  <footer>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="{% url 'index' %}"><img class="f-logo"
-                src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
-                alt="Fanisi Atelier logo" /></a>
-          </li>
-          <li><a href="{% url 'about' %}">About Us</a></li>
-          <li><a href="{% url 'services' %}">Services</a></li>
-          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
-        </ul>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-x-twitter"></i>
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/IMG-20240205-WA0006.jpg' %}"
+            alt=""
+          />
         </div>
-      </nav>
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/B1.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/WhatsApp Image 2024-11-29 at 10.57.08 PM.jpeg' %}"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/C5.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="sr-reveal"
+            src="{% static '/media/images/IMG_5854.jpg' %}"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="client-love">
+        <h1>Client Love</h1>
+        <p>
+          Hear from our satisfied clients who have transormed their spaces with
+          Fanisi Atelier's expertise.
+        </p>
+        <div class="testimonials">
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #ce436883"></i>
+              <p>
+                Fanisi Atelier transformed my living room into a stunning space.
+                Their attention to detail is unmatched!
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/631ba8eed2196a6795698665/1669832250311-EKD5F6GWZMCGKP42PR6W/2022-08-10-Trinet-Henderson-Tiara-1485.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>Alice Njoki</strong><br />
+                <span>Home Owner</span>
+              </div>
+            </div>
+          </div>
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #bb506c"></i>
+              <i class="fa-solid fa-star" style="color: #a35368"></i>
+              <p>
+                The design they created for my restaurant has received countless
+                compliments. Truly a game changer!
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7cUfXeNScwQ1HfIyxXch38VJp8YjNV7N6r-HV0lr6cLTvehVkdmuemV-hjo17YwzSZttmV35JS2pLgPCQL3tPvvZU105fhQK4LaTZm0PnK4OiRpJ50z6O5iwmGZ3qtW4vXOaPL9udQTDF/s1600/12+DSC_6986.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>Michael Waweru</strong><br />
+                <span>Restaurant Owner</span>
+              </div>
+            </div>
+          </div>
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #0000001c"></i>
+              <p>
+                Working with Fanisi Atelier was a dream. They understood my
+                vision and brought it to life beautifully.
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="{% static 'media/images/4186f1e4d484cbc00a01d9b317bdd328.jpg' %}"
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>Elizabeth Kamau</strong><br />
+                <span>Real Estate Agent</span>
+              </div>
+            </div>
+          </div>
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #685d60"></i>
+              <p>
+                Our office space feels so much more inviting and productive
+                thanks to their innovative designs.
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="https://media.istockphoto.com/id/149061025/photo/african-american-male-businessman.jpg?s=612x612&w=0&k=20&c=cRWqTprld8ZSgad7lm10p6mnKllIdTpNBruF5GAEdiw="
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>David Kariuki</strong><br />
+                <span> Office Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #7c6067"></i>
+              <i class="fa-solid fa-star" style="color: #837176"></i>
+              <p>
+                I was blown away by the creativity and style they brought to my
+                home. Highly recommend!
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="https://jonbradley.co.uk/wp-content/uploads/2024/06/6-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>Emily Davis</strong><br />
+                <span>Home Decor Influencer</span>
+              </div>
+            </div>
+          </div>
+          <div class="box-top sr-reveal">
+            <div>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #e33665"></i>
+              <i class="fa-solid fa-star" style="color: #92606d"></i>
+              <p>
+                Fanisi Atelier's designs not only look great but also add
+                significant value to my properties.
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="profile">
+                <img
+                  src="https://b1688923.smushcdn.com/1688923/wp-content/uploads/2022/06/Melbourne-Branding-Photography_professional_headshots-Huss-52-3-web.jpg?lossy=2&strip=1&webp=1"
+                  alt=""
+                />
+              </div>
+              <div class="user-name">
+                <strong>Shakil Dinesh</strong><br />
+                <span>Property Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <hr />
-    <div class="footer">
-      <p>
-        &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
-        interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
-      </p>
-      <p><a href="#">Terms of Service</a></p>
-      <p><a href="#">Privacy Policy</a></p>
-    </div>
-  </footer>
-  <script src="{% static 'js/script.js' %}"></script>
-  <script>
-    document
-      .getElementById("contactForm")
-      .addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission
+    <section id="contact" class="c-response">
+      <div>
+        <div id="custom-alert">
+          <p id="custom-alert-message"></p>
+        </div>
+        <form id="contactForm" action="{% url 'send_email' %}" method="post">
+          {% csrf_token %}
+          <div class="form-tittle">
+            <h3>Get in Touch</h3>
+            <p>We'd love to hear from you!</p>
+          </div>
+          <label for="text" id="name">Name</label><br />
+          <input
+            size="1"
+            type="text"
+            name="name"
+            id="response-name"
+            placeholder="Enter your name"
+            required="required"
+            aria-required="true"
+          /><br />
+          <label for="email" id="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="response-email"
+            placeholder="Enter your email"
+            required="required"
+            aria-required="true"
+          /><br />
+          <label for="text" id="response">Message</label><br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Type your message"
+            rows="4"
+            required="required"
+            aria-required="true"
+          ></textarea
+          ><br />
+          <input
+            type="checkbox"
+            id="terms"
+            required="required"
+            aria-required="true"
+          />
+          <label for="terms" id="terms">I accept the Terms</label><br />
+          <input type="submit" id="form-submit" />
+        </form>
+      </div>
+      <div class="g-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.926347122296!2d36.74464877552199!3d-1.2115603987768764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f23e201e9164d%3A0xeb5aee215a2d18ec!2sFANISI%20HEIGHTS%20KARURA!5e0!3m2!1sen!2ske!4v1728895433026!5m2!1sen!2ske"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="{% url 'index' %}"
+                ><img
+                  class="f-logo"
+                  src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+                  alt="Fanisi Atelier logo"
+              /></a>
+            </li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+          </ul>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>
+          &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
+          interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
+        </p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
 
-        const formData = new FormData(this);
-        const csrfToken = document.querySelector(
-          "[name=csrfmiddlewaretoken]"
-        ).value;
-        const submitButton = document.getElementById("form-submit");
+          const formData = new FormData(this);
+          const csrfToken = document.querySelector(
+            "[name=csrfmiddlewaretoken]"
+          ).value;
+          const submitButton = document.getElementById("form-submit");
 
-        // Disable the submit button and show a loading spinner
-        submitButton.disabled = true;
-        submitButton.value = "Submitting...";
+          // Disable the submit button and show a loading spinner
+          submitButton.disabled = true;
+          submitButton.value = "Submitting...";
 
-        fetch("{% url 'send_email' %}", {
-          // Correctly processed by Django
-          method: "POST",
-          headers: {
-            "X-CSRFToken": csrfToken,
-          },
-          body: formData,
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.success) {
-              // Store the success message in session storage
-              sessionStorage.setItem("notification", data.success);
-            } else {
-              // Store the error message in session storage
-              sessionStorage.setItem("notification", data.error);
-            }
-            // Redirect immediately to the home page
-            window.location.href = '{% url "index" %}';
+          fetch("{% url 'send_email' %}", {
+            // Correctly processed by Django
+            method: "POST",
+            headers: {
+              "X-CSRFToken": csrfToken,
+            },
+            body: formData,
           })
-          .catch((error) => {
-            console.error("Error:", error);
-          })
-          .finally(() => {
-            // Re-enable the submit button in case of an error
-            submitButton.disabled = false;
-            submitButton.value = "Submit";
-          });
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                // Store the success message in session storage
+                sessionStorage.setItem("notification", data.success);
+              } else {
+                // Store the error message in session storage
+                sessionStorage.setItem("notification", data.error);
+              }
+              // Redirect immediately to the home page
+              window.location.href = '{% url "index" %}';
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            })
+            .finally(() => {
+              // Re-enable the submit button in case of an error
+              submitButton.disabled = false;
+              submitButton.value = "Submit";
+            });
+        });
+
+      window.addEventListener("load", function () {
+        const notification = sessionStorage.getItem("notification");
+        if (notification) {
+          const customAlert = document.getElementById("custom-alert");
+          const customAlertMessage = document.getElementById(
+            "custom-alert-message"
+          );
+
+          customAlertMessage.textContent = notification;
+          customAlert.style.display = "block";
+
+          // Automatically hide the alert after a few seconds
+          setTimeout(() => {
+            customAlert.style.display = "none";
+          }, 3000); // Adjust the time as needed
+
+          // Clear the notification from session storage
+          sessionStorage.removeItem("notification");
+        }
       });
-
-    window.addEventListener('load', function () {
-      const notification = sessionStorage.getItem('notification');
-      if (notification) {
-        const customAlert = document.getElementById('custom-alert');
-        const customAlertMessage = document.getElementById('custom-alert-message');
-
-        customAlertMessage.textContent = notification;
-        customAlert.style.display = 'block';
-
-        // Automatically hide the alert after a few seconds
-        setTimeout(() => {
-          customAlert.style.display = 'none';
-        }, 3000); // Adjust the time as needed
-
-        // Clear the notification from session storage
-        sessionStorage.removeItem('notification');
-      }
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

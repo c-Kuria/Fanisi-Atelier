@@ -1,4 +1,4 @@
-{% load static %} 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,8 +38,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </ul>
         <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
         <div class="toggle-btn">
@@ -53,8 +53,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </div>
       </nav>
     </header>
@@ -114,7 +114,10 @@
       <p>Discover the talented individuals behind our stunning designs.</p>
       <div class="team">
         <div>
-          <img src="{% static 'media/images/team.webp' %}" alt="Richard Mbogua" />
+          <img
+            src="{% static 'media/images/team.webp' %}"
+            alt="Richard Mbogua"
+          />
           <h3>Richard Mbugua</h3>
           <h4>Lead Designer</h4>
           <p>
@@ -137,7 +140,10 @@
           <i class="fa-brands fa-x-twitter"></i>
         </div>
         <div>
-          <img src="{% static 'media/images/team.webp' %}" alt="Bernard Kainamia" />
+          <img
+            src="{% static 'media/images/team.webp' %}"
+            alt="Bernard Kainamia"
+          />
           <h3>Bernard Kainamia</h3>
           <h4>Client Relations Manager</h4>
           <p>
@@ -164,6 +170,7 @@
             <li><a href="{% url 'about' %}">About Us</a></li>
             <li><a href="{% url 'services' %}">Services</a></li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'index' %}#contact">Contact</a></li>
             <li><a href="{% url 'blog' %}">Blog</a></li>
           </ul>
           <div class="social-icons">

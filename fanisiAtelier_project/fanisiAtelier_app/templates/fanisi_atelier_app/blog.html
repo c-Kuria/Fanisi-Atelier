@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/blog.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/services.css' %}" />
-    <link rel="stylesheet" href="{% static 'styles/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/portfolio.css' %}" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -40,8 +40,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </ul>
         <a class="gs-btn" href="{% url 'services' %}">Get Started</a>
         <div class="toggle-btn">
@@ -55,8 +55,8 @@
           <li><a href="{% url 'about' %}">About Us</a></li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
         </div>
       </nav>
     </header>
@@ -79,7 +79,9 @@
           <article>
             <div class="image-box">
               <a href="{% url 'top-5-interior-design-trends-2024' %}"
-                ><img src="{% static 'media/images/tenweb_media_YyZPIzJu.webp' %}" alt="Living Room"
+                ><img
+                  src="{% static 'media/images/tenweb_media_YyZPIzJu.webp' %}"
+                  alt="Living Room"
               /></a>
             </div>
             <div class="blog-content-box sr-reveal">
@@ -93,41 +95,52 @@
                 Discover the latest trends that are shaping the world of
                 interior design this year.
               </p>
-              <a href="{% url 'top-5-interior-design-trends-2024' %}">Read More<i class="fa-solid fa-angles-right"></i></a>
+              <a href="{% url 'top-5-interior-design-trends-2024' %}"
+                >Read More<i class="fa-solid fa-angles-right"></i
+              ></a>
             </div>
           </article>
           <article>
             <div class="image-box">
-              <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
-                ><img src="{% static 'media/images/tenweb_media_FrZEz79Q.webp' %}" alt="color Palette"
+              <a
+                href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
+                ><img
+                  src="{% static 'media/images/tenweb_media_FrZEz79Q.webp' %}"
+                  alt="color Palette"
               /></a>
             </div>
             <div class="blog-content-box sr-reveal">
               <h5>Design Tips</h5>
               <h2>
-                <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
+                <a
+                  href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
                   >How to Choose the Right Color Palette for Your Home</a
                 >
               </h2>
               <p>
-                Selecting the perfect color palette can transform your home into a
-                harmonious space.
+                Selecting the perfect color palette can transform your home into
+                a harmonious space.
               </p>
-              <a href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
-                >Read More <i class="fa-solid fa-angles-right"></i></a
-              >
+              <a
+                href="{% url 'how-to-choose-the-right-color-palette-for-your-home' %}"
+                >Read More <i class="fa-solid fa-angles-right"></i
+              ></a>
             </div>
           </article>
           <article>
             <div class="image-box">
-              <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
-                ><img src="{% static 'media/images/tenweb_media_za3hbntK.webp' %}" alt="Living Room"
+              <a
+                href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
+                ><img
+                  src="{% static 'media/images/tenweb_media_za3hbntK.webp' %}"
+                  alt="Living Room"
               /></a>
             </div>
             <div class="blog-content-box sr-reveal">
               <h5>Space Optimization</h5>
               <h2>
-                <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
+                <a
+                  href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
                   >Maximizing Small Spaces: Design Tips and Tricks</a
                 >
               </h2>
@@ -135,29 +148,34 @@
                 Learn how to make the most of your small living areas with these
                 design strategies.
               </p>
-              <a href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
-                >Read More <i class="fa-solid fa-angles-right"></i></a
-              >
+              <a
+                href="{% url 'maximazing-small-spaces-design-tips-and-tricks' %}"
+                >Read More <i class="fa-solid fa-angles-right"></i
+              ></a>
             </div>
           </article>
           <article>
             <div class="image-box">
               <a href="{% url 'the-importance-of-lighting' %}"
-                ><img src="{% static 'media/images/tenweb_media_TzeWgrNl.webp' %}" alt="Dining Room"
+                ><img
+                  src="{% static 'media/images/tenweb_media_TzeWgrNl.webp' %}"
+                  alt="Dining Room"
               /></a>
             </div>
             <div class="blog-content-box sr-reveal">
               <h5>Design Insights</h5>
               <h2>
-                  <a href="{% url 'the-importance-of-lighting' %}"
+                <a href="{% url 'the-importance-of-lighting' %}"
                   >The Importance of Lighting in Interior Design</a
                 >
               </h2>
               <p>
-                Explore how lighting can dramatically impact the look and feel of
-                your home.
+                Explore how lighting can dramatically impact the look and feel
+                of your home.
               </p>
-              <a href="{% url 'the-importance-of-lighting' %}">Read More <i class="fa-solid fa-angles-right"></i></a>
+              <a href="{% url 'the-importance-of-lighting' %}"
+                >Read More <i class="fa-solid fa-angles-right"></i
+              ></a>
             </div>
           </article>
         </section>
@@ -178,6 +196,7 @@
             <li><a href="{% url 'about' %}">About Us</a></li>
             <li><a href="{% url 'services' %}">Services</a></li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'index' %}#contact">Contact</a></li>
             <li><a href="{% url 'blog' %}">Blog</a></li>
           </ul>
           <div class="social-icons">
