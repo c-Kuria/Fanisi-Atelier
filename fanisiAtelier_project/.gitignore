@@ -46,3 +46,18 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+
+# Media files
+static/media/images/*
+static/media/videos/*
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.webm
+*.webp
+
+# Keep media directories but ignore contents
+!static/media/images/.gitkeep
+!static/media/videos/.gitkeep
