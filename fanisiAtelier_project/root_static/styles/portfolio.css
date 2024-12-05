@@ -79,7 +79,29 @@ h5 {
   width: 630px;
 }
 
+.over {
+  z-index: 1;
+}
+
+.under1 {
+  z-index: -1;
+  margin-top: -303px;
+}
+
+.under2 {
+  z-index: -1;
+  margin-top: -429px;
+}
+
 @media (max-width: 1336px) {
+  .under1 {
+    margin-top: -278px;
+  }
+
+  .under2 {
+    margin-top: -392px;
+  }
+
   .portfolio-content {
     margin: 2rem;
   }
@@ -90,6 +112,14 @@ h5 {
 }
 
 @media (max-width: 1186px) {
+  .under1 {
+    margin-top: -225px;
+  }
+
+  .under2 {
+    margin-top: -317px;
+  }
+
   .portfolio-wrapper img {
     width: 301.13px;
   }
@@ -102,12 +132,24 @@ h5 {
 
 @media (max-width: 968px) {
   .portfolio-wrapper {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
+  .under1 {
+    margin-top: -74px;
+    height: 300px;
+  }
+
+  .under2 {
+    margin: -400px -224px 16px 146px;
+  }
+
+  .kitchen {
+    height: 280px;
+  }
   .portfolio-wrapper img {
     width: 356.13px;
   }
@@ -122,17 +164,41 @@ h5 {
   }
 
   h1 {
-   font-size: 36px;
+    font-size: 36px;
   }
 
-  p{
+  p {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
+  .under1 {
+    z-index: 0;
+    margin: 0 0 0 2px;
+    height: 210px;
+  }
+
+  .under2 {
+    z-index: -1;
+    margin: 218px 2px 0 -263px;
+  }
+
+  .kitchen {
+    z-index: 0;
+    height: 200px;
+  }
+
+  .portfolio-datails {
+    margin: 480px 0 0 0;
+  }
+
   .portfolio-wrapper img {
-    width: 165.13px;
+    width: 255.13px;
+  }
+
+  .portfolio-wrapper:first-child {
+    height: 250px;
   }
 
   .container-box {
@@ -151,10 +217,16 @@ h5 {
   }
 
   .portfolio-header p {
-    width: 100%;
+    width: 88%;
   }
 
-  .portfolio-wrapper{
+  .portfolio-wrapper {
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 586px) {
+  .portfolio-datails {
+    margin: 1166px 0 0 0;
   }
 }

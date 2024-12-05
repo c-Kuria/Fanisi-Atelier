@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/nirv/software_e/myprojects/Fanisi-Atelier
+set -gx VIRTUAL_ENV /home/nirv/CascadeProjects/Fanisi-Atelier
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
