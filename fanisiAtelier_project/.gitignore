@@ -48,8 +48,8 @@ ENV/
 Thumbs.db
 
 # Media files
-static/media/images/*
-static/media/videos/*
+fanisiAtelier_project/static/media/images/*
+fanisiAtelier_project/static/media/videos/*
 *.jpg
 *.jpeg
 *.png
@@ -57,7 +57,8 @@ static/media/videos/*
 *.mp4
 *.webm
 *.webp
+*.svg
 
 # Keep media directories but ignore contents
-!static/media/images/.gitkeep
-!static/media/videos/.gitkeep
+!fanisiAtelier_project/static/media/images/.gitkeep
+!fanisiAtelier_project/static/media/videos/.gitkeep
