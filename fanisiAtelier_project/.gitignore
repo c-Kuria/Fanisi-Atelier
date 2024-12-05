@@ -58,6 +58,7 @@ fanisiAtelier_project/static/media/videos/*
 *.webm
 *.webp
 *.svg
+*.ico
 
 # Keep media directories but ignore contents
 !fanisiAtelier_project/static/media/images/.gitkeep
