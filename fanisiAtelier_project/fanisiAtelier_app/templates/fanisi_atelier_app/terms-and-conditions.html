@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions - Fanisi Atelier</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .legal-content {
+        max-width: 1200px;
+        margin: 120px auto 60px;
+        padding: 0 20px;
+      }
+      .legal-content h1 {
+        color: #e33665;
+        margin-bottom: 30px;
+      }
+      .legal-content h2 {
+        color: #333;
+        margin: 25px 0 15px;
+      }
+      .legal-content p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+      .legal-section {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="{% url 'index' %}"
+            ><img
+              class="logo"
+              src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+              alt="Fanisi Atelier logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="legal-content">
+      <h1>Terms and Conditions</h1>
+      
+      <div class="legal-section">
+        <h2>1. Services</h2>
+        <p>Fanisi Atelier provides interior design services including but not limited to consultation, design planning, project management, and implementation of interior design solutions.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>2. Project Agreement</h2>
+        <p>All design projects require a signed agreement and deposit before work begins. The specific terms, timeline, and deliverables will be outlined in individual project contracts.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>3. Payment Terms</h2>
+        <p>Payment schedules will be outlined in the project contract. Typically, we require a deposit to begin work, with subsequent payments tied to project milestones.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>4. Intellectual Property</h2>
+        <p>All designs, drawings, and creative work remain the intellectual property of Fanisi Atelier until full payment is received. We reserve the right to use photos of completed projects for marketing purposes.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>5. Client Responsibilities</h2>
+        <p>Clients are responsible for providing timely feedback, access to project sites, and maintaining open communication throughout the project duration.</p>
+      </div>
+
+      <div class="legal-section">
+        <h2>6. Modifications</h2>
+        <p>These terms may be modified at any time. Clients will be notified of any changes that affect ongoing projects.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="{% url 'index' %}"
+                ><img
+                  class="f-logo"
+                  src="{% static 'media/images/ed712687-a3d7-4d4a-a1f4-1ac617bf89d3.jpeg' %}"
+                  alt="Fanisi Atelier logo"
+              /></a>
+            </li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'index' %}#contact">Contact</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+          </ul>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>
+          &copy; 2024 Fanisi Atelier. All rights reserved. Designing beautiful
+          interior and exterior spaces. | Contact us: info@fanisiatelier.co.ke
+        </p>
+        <p><a href="{% url 'terms-and-conditions' %}">Terms of Service</a></p>
+        <p><a href="{% url 'privacy-policy' %}">Privacy Policy</a></p>
+      </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

@@ -33,6 +33,12 @@ def maximazing_small_spaces_design_tips_and_tricks(request):
 def the_importance_of_lighting(request):
     return render(request, 'fanisi_atelier_app/the-importance-of-lighting.html',{'date':date})
 
+def terms_and_conditions(request):
+    return render(request, 'fanisi_atelier_app/terms-and-conditions.html')
+
+def privacy_policy(request):
+    return render(request, 'fanisi_atelier_app/privacy-policy.html')
+
 from django.core.mail import send_mail, EmailMessage
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -59,3 +65,9 @@ def send_email(request):
             return JsonResponse({'error': 'Error sending email'}, status=500)
 
     return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+def custom_404(request, exception=None):
+    return render(request, 'fanisi_atelier_app/404.html', status=404)
+
+def custom_500(request, *args, **argv):
+    return render(request, 'fanisi_atelier_app/500.html', status=500)

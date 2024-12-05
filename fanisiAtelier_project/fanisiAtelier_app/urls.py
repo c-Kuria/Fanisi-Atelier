@@ -12,4 +12,6 @@ urlpatterns = [
     path('maximazing-small-spaces-design-tips-and-tricks/', views.maximazing_small_spaces_design_tips_and_tricks, name='maximazing-small-spaces-design-tips-and-tricks'),
     path('the-importance-of-lighting/', views.the_importance_of_lighting, name='the-importance-of-lighting'),
     path('send_email/', views.send_email, name='send_email'),
+    path('terms-and-conditions/', views.terms_and_conditions, name='terms-and-conditions'),
+    path('privacy-policy/', views.privacy_policy, name='privacy-policy'),
 ]
