@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
+from django.conf import settings
 
 # Create your views here
 x = datetime.datetime.now()
@@ -54,9 +55,9 @@ def send_email(request):
             email = EmailMessage(
                 subject='New Message from Fanisi Atelier',
                 body=f"Name: {name}\n\nMessage: {message}",
-                from_email='Fanisi Atelier <briannkuria@gmail.com>',  # From email
-                to=['briannkuria@gmail.com'],  # To email
-                reply_to=[from_email],  # Reply-To email
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                to=[settings.EMAIL_HOST_USER],
+                reply_to=[from_email],
             )
             email.send(fail_silently=False)
             return JsonResponse({'success': 'Email sent successfully'}, status=200)
