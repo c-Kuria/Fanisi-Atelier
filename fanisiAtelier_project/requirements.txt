@@ -1,6 +1,6 @@
 Django==5.1.5
 python-dotenv==1.0.0
-Pillow==10.1.0  # For image handling
+Pillow==10.3.0  # For image handling
 django-crispy-forms==2.1  # For better form rendering
 crispy-bootstrap5==2023.10  # Bootstrap 5 template pack
 whitenoise==6.6.0  # For serving static files
