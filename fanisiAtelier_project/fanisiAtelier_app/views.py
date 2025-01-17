@@ -23,8 +23,8 @@ def portfolio(request):
 def blog(request):
     return render(request, 'fanisi_atelier_app/blog.html', {'year':year})
 
-def top_5_interior_design_trends_2024(request):
-    return render(request, 'fanisi_atelier_app/top-5-interior-design-trends-2024.html', {'date': date, 'year':year})
+def top_5_interior_design_trends(request):
+    return render(request, 'fanisi_atelier_app/top-5-interior-design-trends.html', {'date': date, 'year':year})
 
 def how_to_choose_the_right_color_palette_for_your_home(request):
     return render(request, 'fanisi_atelier_app/how-to-choose-the-right-color-palette-for-your-home.html',{'date':date, 'year':year})
