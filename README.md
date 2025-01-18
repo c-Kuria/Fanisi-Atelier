@@ -19,13 +19,53 @@ Fanisi Atelier is a professional interior and exterior design studio website bui
 - **Blog**: Regular updates with design tips, trends, and inspiration
 - **Contact**: Easy-to-use contact form for inquiries and consultations
 
-The website combines elegant design with functionality to provide an optimal user experience for clients seeking professional interior and exterior design services.# Fanisi-Atelier
+The website combines elegant design with functionality to provide an optimal user experience for clients seeking professional interior and exterior design services.
 
-git clone
-cd FanisiA
-source bin/activate(linux)
+## Setup Instructions
 
-cd fanisi-project
-python manage migrate
-python manage collectstatic
-python manage.py runserver
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/c-Kuria/Fanisi-Atelier.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd Fanisi-Atelier
+   ```
+
+3. Set up a virtual environment:
+   - For Linux:
+     ```bash
+     source bin/activate
+     ```
+   - For Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+4. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Navigate to the project directory:
+   ```bash
+   cd fanisiAtelier_project
+   ```
+
+6. Run database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+
+7. Collect static files:
+   ```bash
+   python manage.py collectstatic
+   ```
+
+8. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
+
+Now you can access the website at `http://127.0.0.1:8000/`.
