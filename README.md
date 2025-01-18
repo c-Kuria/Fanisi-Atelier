@@ -20,3 +20,12 @@ Fanisi Atelier is a professional interior and exterior design studio website bui
 - **Contact**: Easy-to-use contact form for inquiries and consultations
 
 The website combines elegant design with functionality to provide an optimal user experience for clients seeking professional interior and exterior design services.# Fanisi-Atelier
+
+git clone
+cd FanisiA
+source bin/activate(linux)
+
+cd fanisi-project
+python manage migrate
+python manage collectstatic
+python manage.py runserver
