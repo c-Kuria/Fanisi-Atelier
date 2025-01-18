@@ -14,8 +14,16 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Check if the ".env" file exists
+if os.path.exists(".env"):
+    load_dotenv(".env")
+    # print("Loaded environment variables from .env")
+# Check if the backup "dotenv" file exists
+elif os.path.exists("dotenv"):
+    load_dotenv("dotenv")
+    print("Loaded environment variables from backup file 'dotenv'")
+else:
+    print("No environment file found. Using system defaults or fallback values.")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

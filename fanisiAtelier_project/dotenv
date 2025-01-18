@@ -1,0 +1,21 @@
+DEBUG=True
+SECRET_KEY=django-insecure-+f=56e62ztpp!46)u%h)alspxa2d1wuigwi@^*j^s-k97_ej%n
+ALLOWED_HOSTS=127.0.0.1
+
+
+# Email Configuration
+EMAIL_HOST=
+EMAIL_PORT=
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=<email@example.com>
+EMAIL_HOST_PASSWORD=
+DEFAULT_FROM_EMAIL=Fanisi Atelier <email@example.com>
+DEFAULT_REPLY_TO_EMAIL=<email@example.com>
+
+# Database settings 
+DATABASE_URL=postgresql://user:password@localhost:12345/dbname
+
+# Media Paths
+MEDIA_ROOT=static/media
+IMAGE_DIR=static/media/images
+VIDEO_DIR=static/media/videos
