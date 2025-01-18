@@ -1,0 +1,329 @@
+h1 {
+    font-size: 42px;
+}
+
+.about-wrapper p {
+  width: 80%;
+  font-size: 17px;
+}
+
+.about-wrapper h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper svg {
+  width: 32px;
+  height: 40px;
+}
+
+.about-wrapper .abt-header {
+  display: flex;
+  justify-content: center;
+  text-align: -webkit-center;
+}
+
+.abt-header {
+  margin: 1rem 10rem 8rem;
+}
+
+.abt-header h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.abt-header p {
+  text-align: center;
+}
+
+.abt-body-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: -webkit-center;
+}
+
+.abt-body-wrapper p {
+  text-align: center;
+  width: 62%;
+}
+
+.abt-body-wrapper i {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.abt-wrapper-top {
+  margin-top: -5rem;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.team-wrapper {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.team img {
+  width: 305px;
+  height: 305px;
+}
+
+.team h4 {
+  font-size: 14px;
+  color: rgb(73, 73, 72);
+}
+
+.team p {
+  width: 19rem;
+  font-size: 14px;
+}
+
+/* For screens 1100px */
+@media (max-width: 1100px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    .about-wrapper p {
+      font-size: 17px;
+      width: 85%;
+    }
+  
+    .about-wrapper h2 {
+      font-size: 30px;
+    }
+  
+    .abt-header {
+      margin: 1rem 8rem 7rem;
+    }
+  
+    .abt-header h1 {
+      font-size: 40px;
+    }
+  
+    .abt-body-wrapper p {
+      width: 70%;
+      font-size: 17px;
+    }
+
+    .team {
+        display: flex;
+        gap: 1.5rem;
+    }
+  
+    .team img {
+      width: 280px;
+      height: 280px;
+    }
+  
+    .team h4 {
+      font-size: 13px;
+    }
+  
+    .team p {
+      font-size: 13px;
+      width: 18rem;
+    }
+  }
+  
+  /* For screens 930px */
+  @media (max-width: 930px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    .about-wrapper p {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    .about-wrapper h2 {
+      font-size: 28px;
+    }
+  
+    .abt-header {
+      margin: 1rem 6rem 6rem;
+    }
+  
+    .abt-header h1 {
+      font-size: 36px;
+    }
+  
+    .abt-body-wrapper p {
+      width: 80%;
+      font-size: 16px;
+    }
+  
+    .team img {
+      width: 260px;
+      height: 260px;
+    }
+  
+    .team h4 {
+      font-size: 12px;
+    }
+  
+    .team p {
+      font-size: 12px;
+      width: 16rem;
+    }
+  }
+  
+  /* For screens 830px */
+  @media (max-width: 830px) {
+    h1 {
+      font-size: 34px;
+    }
+  
+    .about-wrapper p {
+      font-size: 15px;
+      width: 95%;
+    }
+  
+    .about-wrapper h2 {
+      font-size: 26px;
+    }
+  
+    .abt-header {
+      margin: 1rem 5rem 5rem;
+    }
+  
+    .abt-header h1 {
+      font-size: 34px;
+    }
+  
+    .abt-body-wrapper p {
+      width: 85%;
+      font-size: 15px;
+    }
+  
+    .team img {
+      width: 240px;
+      height: 240px;
+    }
+  
+    .team h4 {
+      font-size: 11px;
+    }
+  
+    .team p {
+      font-size: 11px;
+      width: 15rem;
+    }
+  }
+  
+  /* For screens 768px */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    .about-wrapper p {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .about-wrapper h2 {
+      font-size: 24px;
+    }
+  
+    .abt-header {
+      margin: 1rem 3rem 5rem;
+    }
+  
+    .abt-header h1 {
+      font-size: 28px;
+    }
+  
+    .abt-body-wrapper p {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .abt-body-wrapper i {
+      font-size: 1.5rem;
+    }
+  
+    .team img {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .team h4 {
+      font-size: 10px;
+    }
+  
+    .team p {
+      font-size: 10px;
+      width: 14rem;
+    }
+  }
+  
+  /* For screens 720px - Change to column layout */
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 30px;
+    }
+
+
+
+    .about-wrapper p {
+      font-size: 13px;
+      width: 100%;
+    }
+  
+    .about-wrapper h2 {
+      font-size: 22px;
+    }
+  
+    .abt-header h1 {
+      font-size: 26px;
+    }
+
+    .abt-body-wrapper {
+        display: block;
+    }
+
+    .abt-header {
+        margin: 0 auto;
+    }
+
+    .abt-wrapper-top {
+        margin: 0 auto;
+    }
+  
+    .abt-body-wrapper p {
+      width: 100%;
+      font-size: 13px;
+    }
+  
+    .abt-body-wrapper i {
+      font-size: 1.3rem;
+    }
+  
+    .team {
+      flex-direction: column; /* Switch to column layout */
+      align-items: center;
+    }
+  
+    .team img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .team h4 {
+      font-size: 10px;
+    }
+  
+    .team p {
+      font-size: 10px;
+      width: 12rem;
+    }
+  }
+  
